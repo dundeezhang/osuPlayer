@@ -5,6 +5,7 @@ import java.io.*;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.StringTokenizer;
 
 public class DHZOSU {
     private JPanel panelArea;
@@ -24,7 +25,12 @@ public class DHZOSU {
     private JButton selectCollectionButton;
     private JButton quitButton;
     private JButton selectOsuFolderButton;
-    private final File data;
+    private JProgressBar progressBar1;
+    private JButton skipTrackButton;
+    private JLabel progressLabel;
+    private JLabel additionalOptionsLabel;
+    private static File data;
+    private static ArrayList<String> songsList;
 
     public DHZOSU() {
 
@@ -41,9 +47,10 @@ public class DHZOSU {
         });
         selectOsuFolderButton.addActionListener(e -> {
             selectFileLocation();
-            Songs songs = new Songs(data);
             try {
+                Songs songs = new Songs(data);
                 songs.initSongs();
+                songsList = songs.addToList();
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
@@ -56,13 +63,6 @@ public class DHZOSU {
             String osuPath = Objects.requireNonNull(getInputPath(null)).toString();
             BufferedWriter bufferWrite = null;
             try {
-
-                /* This logic will make sure that the file
-                 * gets created if it is not present at the
-                 * specified location*/
-                if (!data.exists()) {
-                    data.createNewFile();
-                }
 
                 FileWriter fileWrite = new FileWriter(data, false);
                 bufferWrite = new BufferedWriter(fileWrite);
@@ -85,13 +85,26 @@ public class DHZOSU {
     }
 
     private void search(JTextField field) throws IOException {
-        ArrayList<String> songInfo = new ArrayList<>();
+        ArrayList<String> goodList = new ArrayList<>();
+        String searched = field.getText();
+
         if (checkPath()) {
-            String search = field.getText();
-            BufferedReader read = new BufferedReader(new FileReader(data));
-            String lineRead;
-            while ((lineRead = read.readLine()) != null) {
-                songInfo.add(lineRead);
+            // just a search where it iterates through everything because there may be multiple results
+            for (String s : songsList) {
+                if (s.toLowerCase().contains(searched.toLowerCase())) {
+                    goodList.add(s);
+                }
+            }
+            logArea.setText("");
+            if(goodList.isEmpty()) logArea.setText("No songs were found for \"" + searched + "\"\n");
+            for (String s : goodList) {
+                System.out.println(s);
+
+                StringTokenizer st = new StringTokenizer(s, ";");
+                st.nextToken();
+                String songName = st.nextToken();
+                String artist = st.nextToken();
+                logArea.setText(logArea.getText() + "Song: " + songName + "  | Artist: " + artist + "\n");
             }
 
         }
@@ -117,12 +130,17 @@ public class DHZOSU {
      *
      * @param args Command Line Arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         JFrame window = new JFrame("DHZ Osu Player");
         window.setContentPane(new DHZOSU().panelArea);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.pack();
         window.setVisible(true);
+
+        Songs songs = new Songs(data);
+        songsList = songs.addToList();
+        Player player = new Player();
+        player.start();
     }
 
     private boolean checkPath() throws IOException {

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.dundeehz.DHZOSU">
-  <grid id="27dc6" binding="panelArea" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panelArea" layout-manager="GridLayoutManager" row-count="8" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="600" height="416"/>
+      <xy x="20" y="20" width="600" height="500"/>
     </constraints>
     <properties>
       <inheritsPopupMenu value="false"/>
-      <maximumSize width="600" height="400"/>
-      <minimumSize width="600" height="400"/>
-      <preferredSize width="600" height="400"/>
+      <maximumSize width="600" height="500"/>
+      <minimumSize width="600" height="500"/>
+      <preferredSize width="600" height="500"/>
     </properties>
     <border type="none" title="DHZ Osu Songs Player"/>
     <children>
@@ -24,7 +24,7 @@
       </component>
       <component id="f3c0" class="javax.swing.JTextArea" binding="logArea">
         <constraints>
-          <grid row="1" column="1" row-span="2" col-span="4" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="2" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <minimum-size width="500" height="200"/>
             <preferred-size width="500" height="200"/>
             <maximum-size width="500" height="200"/>
@@ -32,12 +32,13 @@
         </constraints>
         <properties>
           <editable value="false"/>
+          <focusable value="false"/>
           <text value=""/>
         </properties>
       </component>
       <component id="1a921" class="javax.swing.JTextField" binding="searchBox">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="500" height="20"/>
             <preferred-size width="500" height="20"/>
             <maximum-size width="500" height="20"/>
@@ -47,21 +48,12 @@
       </component>
       <vspacer id="b5f95">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="98b4e" class="javax.swing.JCheckBox" binding="shuffleCheckBox">
-        <constraints>
-          <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <focusable value="false"/>
-          <text value="Shuffle/Random"/>
-        </properties>
-      </component>
       <component id="e7629" class="javax.swing.JSlider" binding="timerSlider">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="3" use-parent-layout="false"/>
+          <grid row="6" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="3" use-parent-layout="false"/>
         </constraints>
         <properties>
           <focusable value="false"/>
@@ -76,7 +68,7 @@
       </component>
       <component id="a81dd" class="javax.swing.JLabel" binding="optionsLabel">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Options:"/>
@@ -84,7 +76,7 @@
       </component>
       <component id="75ffc" class="javax.swing.JLabel" binding="sleepTimerSliderLabel">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Sleep Timer:"/>
@@ -92,7 +84,7 @@
       </component>
       <component id="3d037" class="javax.swing.JCheckBox" binding="loopCurrentSongCheckBox" default-binding="true">
         <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <focusable value="false"/>
@@ -101,7 +93,7 @@
       </component>
       <component id="83515" class="javax.swing.JButton" binding="playRandomButton" default-binding="true">
         <constraints>
-          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Play Random"/>
@@ -109,7 +101,7 @@
       </component>
       <component id="df0fa" class="javax.swing.JLabel" binding="collectionsLabel">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Collections:"/>
@@ -117,7 +109,7 @@
       </component>
       <component id="600df" class="javax.swing.JLabel" binding="currentCollectionLabel">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Current Collection:"/>
@@ -125,7 +117,7 @@
       </component>
       <component id="6806f" class="javax.swing.JButton" binding="selectCollectionButton">
         <constraints>
-          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Select Collection"/>
@@ -133,15 +125,15 @@
       </component>
       <component id="f9624" class="javax.swing.JLabel" binding="currentCollectionDisplay">
         <constraints>
-          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="SELECT COLLECTION TO PLAY"/>
         </properties>
       </component>
-      <component id="8f2d7" class="javax.swing.JLabel">
+      <component id="8f2d7" class="javax.swing.JLabel" binding="additionalOptionsLabel">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Additional Options:"/>
@@ -149,7 +141,7 @@
       </component>
       <component id="c72b" class="javax.swing.JButton" binding="quitButton" default-binding="true">
         <constraints>
-          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Quit"/>
@@ -157,7 +149,7 @@
       </component>
       <component id="5827" class="javax.swing.JButton" binding="selectOsuFolderButton" default-binding="true">
         <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Select Osu Application"/>
@@ -165,10 +157,41 @@
       </component>
       <component id="d3a4" class="javax.swing.JLabel" binding="previousSongsLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="LOG:"/>
+        </properties>
+      </component>
+      <component id="e1a94" class="javax.swing.JProgressBar" binding="progressBar1" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="af7e" class="javax.swing.JButton" binding="skipTrackButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Skip Track"/>
+        </properties>
+      </component>
+      <component id="16e0b" class="javax.swing.JLabel" binding="progressLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Progress:"/>
+        </properties>
+      </component>
+      <component id="98b4e" class="javax.swing.JCheckBox" binding="shuffleCheckBox">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusable value="false"/>
+          <text value="Shuffle/Random"/>
         </properties>
       </component>
     </children>
