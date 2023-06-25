@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bf2543d-5dfe-469c-8b62-4ff1c79de5d2" name="Changes" comment="index and locate song names, artists, and file locations into data">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osuPlayer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dundeehz/DHZOSU.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dundeehz/DHZOSU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dundeehz/Songs.java" afterDir="false" />
+    <list default="true" id="4bf2543d-5dfe-469c-8b62-4ff1c79de5d2" name="Changes" comment="git">
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +53,7 @@
       <workItem from="1686427168103" duration="9922000" />
       <workItem from="1686501000442" duration="643000" />
       <workItem from="1687648177863" duration="2132000" />
-      <workItem from="1687650334932" duration="17171000" />
+      <workItem from="1687650334932" duration="17388000" />
     </task>
     <task id="LOCAL-00001" summary="default data file">
       <created>1687715000494</created>
@@ -71,7 +62,35 @@
       <option name="project" value="LOCAL" />
       <updated>1687715000494</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="index and locate song names, artists, and file locations into data">
+      <created>1687715087802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687715087802</updated>
+    </task>
+    <task id="LOCAL-00003" summary="gui">
+      <created>1687715150555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687715150555</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added select osu location">
+      <created>1687715241182</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687715241182</updated>
+    </task>
+    <task id="LOCAL-00005" summary="git">
+      <created>1687715249659</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687715249659</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +111,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="default data file" />
     <MESSAGE value="index and locate song names, artists, and file locations into data" />
-    <option name="LAST_COMMIT_MESSAGE" value="index and locate song names, artists, and file locations into data" />
+    <MESSAGE value="added select osu folder" />
+    <MESSAGE value="gui" />
+    <MESSAGE value="added select osu location" />
+    <MESSAGE value="git" />
+    <option name="LAST_COMMIT_MESSAGE" value="git" />
   </component>
 </project>
