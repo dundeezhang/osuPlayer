@@ -1,6 +1,8 @@
 package com.dundeehz;
 
 import java.io.*;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Songs {
     private final File data;
@@ -11,6 +13,21 @@ public class Songs {
 
     FileFilter filterOSU = f -> f.getName().endsWith("osu");
 
+    public ArrayList<String> addToList() throws IOException {
+        ArrayList<String> dataList = new ArrayList<>();
+        BufferedReader read = new BufferedReader(new FileReader(data));
+        String lineRead;
+        read.readLine(); // for the first line
+        while ((lineRead = read.readLine()) != null) {
+            dataList.add(lineRead);
+        }
+        return dataList;
+    }
+
+    /**
+     * stores all of the song data into readable txt file
+     * @throws IOException input output error catching
+     */
     public void initSongs() throws IOException {
         BufferedReader fileReader = new BufferedReader(new FileReader(data));
         // get osu songs folder location
@@ -22,7 +39,7 @@ public class Songs {
         for (File file : arr) {
             File currentFolder = new File(osuSongsFolder + "\\" + file.getName() + "\\");
             File[] arr2 = currentFolder.listFiles(filterOSU);
-            if(arr2 == null) continue;
+            if (arr2 == null) continue;
             try {
                 BufferedReader readSongData = new BufferedReader(new FileReader(arr2[0]));
                 // read song name, arist, mp3 location
