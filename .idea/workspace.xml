@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bf2543d-5dfe-469c-8b62-4ff1c79de5d2" name="Changes" comment="git">
-      <change afterPath="$PROJECT_DIR$/src/com/dundeehz/Player.java" afterDir="false" />
+    <list default="true" id="4bf2543d-5dfe-469c-8b62-4ff1c79de5d2" name="Changes" comment="sound class">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dundeehz/DHZOSU.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dundeehz/DHZOSU.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osuPlayer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/osuPlayer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dundeehz/DHZOSU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dundeehz/DHZOSU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dundeehz/Songs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dundeehz/Songs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dundeehz/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dundeehz/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +42,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dundee Zhang/Downloads/ppy-theme-0.0.3.zip",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "D:/openjfx-20.0.1_windows-x86_bin-sdk/javafx-sdk-20.0.1/lib",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -58,7 +61,10 @@
       <workItem from="1686427168103" duration="9922000" />
       <workItem from="1686501000442" duration="643000" />
       <workItem from="1687648177863" duration="2132000" />
-      <workItem from="1687650334932" duration="25977000" />
+      <workItem from="1687650334932" duration="26089000" />
+      <workItem from="1687731789766" duration="897000" />
+      <workItem from="1687734348073" duration="313000" />
+      <workItem from="1687734673817" duration="2884000" />
     </task>
     <task id="LOCAL-00001" summary="default data file">
       <created>1687715000494</created>
@@ -102,7 +108,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687715320104</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="improve code">
+      <created>1687730408811</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687730408811</updated>
+    </task>
+    <task id="LOCAL-00008" summary="allow user search">
+      <created>1687730439784</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687730439784</updated>
+    </task>
+    <task id="LOCAL-00009" summary="sound class">
+      <created>1687730450209</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687730450209</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +154,19 @@
     <MESSAGE value="gui" />
     <MESSAGE value="added select osu location" />
     <MESSAGE value="git" />
-    <option name="LAST_COMMIT_MESSAGE" value="git" />
+    <MESSAGE value="improve code" />
+    <MESSAGE value="allow user search" />
+    <MESSAGE value="sound class" />
+    <option name="LAST_COMMIT_MESSAGE" value="sound class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsatisfiedLinkError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

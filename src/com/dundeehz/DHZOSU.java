@@ -112,7 +112,7 @@ public class DHZOSU {
     }
 
     // https://stackoverflow.com/questions/51973636/how-to-return-the-file-path-from-the-windows-file-explorer-using-java
-    public static Path getInputPath(String s) { // code stolen from stackoverflow
+    public static Path getInputPath(String s) {
          /*Send a path (a String path) to open in a specific directory
          or if null default directory */
         JFileChooser jd = s == null ? new JFileChooser() : new JFileChooser(s);
@@ -139,8 +139,9 @@ public class DHZOSU {
 
         Songs songs = new Songs(data);
         songsList = songs.addToList();
-        Player player = new Player();
-        player.start();
+        //Player player = new Player();
+        //player.updateLoc("D:\\osu!\\Songs\\13223 Demetori - Emotional Skyscraper ~ World's End\\Demetori -  Nada Upasana Pundarika - 06 - .mp3");
+        //player.start();
     }
 
     private boolean checkPath() throws IOException {
